@@ -51,7 +51,7 @@ var family = ['Tyler', 'Jordyn', 'Ryan', 'Chelsey', 'Ireland'];
   Loop through the given array and alert every item in the array.
 */
 
-function looper{family}{
+function looper(family){
   for (i = 0; i<family.length; i++){
     alert(family[i])
   }
