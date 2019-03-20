@@ -208,7 +208,27 @@ var myGroceryList = ['chips', 'pizza', 'hotpockets', 'MtnDew', 'corndogs'];
   addItem() --> [];
 */
 
-//Code Here
+function removeItem(myGroceryList, item){
+  if (!item){
+    return emptyArray = []
+  }
+  for(let i = 0; i < myGroceryList.length; i++){
+    if (myGroceryList[i]===item){
+     myGroceryList.splice(i, 1) 
+    }
+  }
+  return myGroceryList
+
+}
+
+function addItem(myGroceryList,item){
+  if (!item){
+    return emptyArray = []
+  }
+  myGroceryList.push(item)
+  return myGroceryList
+}
+
 
 
 
@@ -218,8 +238,15 @@ var myGroceryList = ['chips', 'pizza', 'hotpockets', 'MtnDew', 'corndogs'];
   Write a function called maker that creates an array, fills that array with numbers from 1 to 215, then returns the array.
 */
 
-//Code Here
-
+function maker () {
+  newArray = []
+  number = 1
+  for (i = 0; i <=214; i++){
+    newArray[i]= number
+    number ++
+  }
+  return newArray
+}
 
 
 ////////// PROBLEM 10 //////////
@@ -234,7 +261,13 @@ var numbers = [5, '9', 16, 19, '25', '34', 48];
   *Verify your answer is correct. --> [15, 19, 26, 29, 35, 44, 58]
 */
   
-//Code Here
+function addTen(numbers){
+for (i = 0; i <numbers.length; i++){
+  numbers[i]= Number(numbers[i])+10
+}
+return numbers
+
+}
 
 
 
